@@ -15,7 +15,7 @@ class CheckboxB(Checkbox): ...
 
 
 # Factory
-class Theme(abc.ABC):
+class GUITheme(abc.ABC):
     @abc.abstractmethod
     def create_button(self) -> Button: 
         return Button()
@@ -24,14 +24,14 @@ class Theme(abc.ABC):
     def create_checkbox(self) -> Checkbox:
         return Checkbox()
 
-class ThemeA(Theme):
+class GUIThemeA(GUITheme):
     def create_button(self) -> Button:
         return ButtonA()
     
     def create_checkbox(self) -> Checkbox:
         return CheckboxA()
     
-class ThemeB(Theme):
+class GUIThemeB(GUITheme):
     def create_button(self) -> Button:
         return ButtonB()
     
