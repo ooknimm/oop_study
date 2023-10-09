@@ -11,3 +11,7 @@ class Rectangle(Shape):
 
     def clone(self) -> Shape:
         return Rectangle(self.width, self.height)
+    
+rectangle = Rectangle(1, 5)
+
+new_rectangle = rectangle.clone()
