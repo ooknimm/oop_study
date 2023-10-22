@@ -12,7 +12,7 @@ class VectorRenderer(Renderer):
     def render(self):
         print("vector")
 
-class Shape(ABC):
+class Shape:
     def __init__(self, renderer: Renderer) -> None:
         self._renderer = renderer
 
