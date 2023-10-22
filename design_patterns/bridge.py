@@ -16,12 +16,10 @@ class Shape(ABC):
     def __init__(self, renderer: Renderer) -> None:
         self._renderer = renderer
 
-    @abstractmethod
-    def render(self): ...
-    
-class Circle(Shape):
     def render(self):
         return self._renderer.render()
+    
+class Circle(Shape): ...
     
 
 renderer = VectorRenderer()
