@@ -9,9 +9,9 @@ class HardDrive:
 
 class Computer:
     """Facade"""
-    BOOT_ADDRESS = 1020301
-    BOOT_SECTOR = 12938
-    SECTOR_SIZE = 1024
+    BOOT_ADDRESS = ...
+    BOOT_SECTOR = ...
+    SECTOR_SIZE = ...
     def run(self):
         cpu = CPU()
         memory = Memory()
